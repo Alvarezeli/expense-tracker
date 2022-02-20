@@ -1,0 +1,13 @@
+.ReactModal__Overlay.ReactModal__Overlay--after-open{
+    background-color: #01010199
+}
+
+.modal-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-img{
+height: 300px;
+}
