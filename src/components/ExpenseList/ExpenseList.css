@@ -12,14 +12,35 @@ flex: 1;
     flex-direction: column;
 }
 
+.empty-list img{
+    margin-top: 30px;
+}
+
+.empty-list label{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 1024px) {
     .empty-image {
         height: 250px;
     }
+    .empty-list label{
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
 }
 
 @media only screen and (max-width: 512px) {
     .empty-image {
         height: 220px;
+    }
+    .empty-list label{
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
     }
 }

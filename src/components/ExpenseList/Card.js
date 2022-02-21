@@ -8,7 +8,7 @@ import { deleteExpense } from "../../redux/actions";
 const Card = ({ item, notifySuccess }) => {
   // console.log('soy item en card', item)
   const dispatch = useDispatch();
-  const time = moment(item.createAt)
+  const time = moment(item.createdAt)
     .locale("es")
     .format("dddd LL")
     .split("de 2022");
@@ -31,20 +31,14 @@ const Card = ({ item, notifySuccess }) => {
           className="card-image"
         />
         <div className="puedes">
-        <h4>{item.title}</h4>
-        <p>{time}</p>
+          <h4>{item.title}</h4>
+          <p>{time}</p>
         </div>
-        
       </div>
-      {/* <div className="info">
-       
-      </div> */}
       <div className="card-right">
-        <div>
-          <h3>{item.amount}</h3>
-        </div>
+        <h3>$ {item.amount}</h3>
         <div className="delete-icon" onClick={handleDelete}>
-          <i class="fi fi-rr-trash"></i>
+        <i class="fi fi-rr-cross-circle"></i>
         </div>
       </div>
     </div>

@@ -1,31 +1,67 @@
-.card{
-    background-color: white;
-    padding: 5px 15px 5px 15px;
-    margin: 1px 1px 15px 1px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 6px;
+.card {
+  background-color: white;
+  padding: 5px 15px 5px 15px;
+  margin: 1px 1px 15px 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
 }
+
 .card-image-container {
-    display: flex;
-  
-    align-items: center;
-   
-   
-}
-.card-image{
-    height: 70px;
-    margin-right: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.card-right{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-between
-};
+.card-image-container h4{
+    margin: 4px;
+    padding: 2px;
+    font-size: 18px;
+}
 
-.puedes{
-   margin-left: 50px;
+.card-image-container p{
+    margin:4px;
+    padding: 2px;
+    color: #706C61;
+}
+
+.card-image {
+  height: 70px;
+  margin-right: 20px
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.card-right h3{
+    margin: 6px 2px 6px 2px;
+}
+
+.delete-icon i{
+    font-size: 21px;
+}
+
+.delete-icon i:hover {
+    color: #FF0000;
+    font-size: 22px ;
+}
+
+@media only screen and (max-width: 750px) {
+    .card-image-container h4 {
+       font-size: 14px;
+       word-break: normal;
+       width: 100%
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card-image-container h4 {
+        font-size: 12px;
+        word-break: normal;
+        width: 100%
+     }
 }

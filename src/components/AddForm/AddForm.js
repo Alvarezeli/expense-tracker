@@ -52,7 +52,7 @@ const AddForm = () => {
       createdAt: new Date(),
     };
     dispatch(addExpense(data));
-    console.log("estoy enviando", data);
+    //console.log("estoy enviando", data);
     setOpenModal(true)
   };
 
@@ -77,7 +77,7 @@ const AddForm = () => {
       <div className="form-item">
         <label>Monto</label>
         <input
-          placeholder="¿Cual es el monto del gasto?"
+          placeholder="¿Cuál es el monto del gasto?"
           value={amount}
           onChange={(e) => handleAmount(e)}
           className="amount-input"

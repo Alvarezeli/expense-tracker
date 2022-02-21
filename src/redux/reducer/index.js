@@ -12,7 +12,6 @@ const initialList = () => {
 }
 
 
-
 const initialState = {
   expenseList: initialList(),
   //estado para la barra de búsqueda
