@@ -96,7 +96,7 @@ margin-left: 10px;
 }
 
 .form-button button {
-    width: 30%;
+    width: 40%;
     padding: 10px 16px 10px 16px;
     margin: 8px 16px 8px 16px;
     outline: none;
@@ -125,4 +125,16 @@ margin-left: 10px;
   .category-container-father {
     width: 102%;
   }
+}
+
+@media only screen and (max-width: 600px) {
+    .amount-input {
+        width: 70% !important;
+      }
+
+      .form-button button {
+        width: 80%;
+        
+    
+    }
 }

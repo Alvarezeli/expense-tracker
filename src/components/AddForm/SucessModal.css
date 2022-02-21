@@ -3,35 +3,48 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
-.modal-inner label{
-    margin: 10px;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
+.modal-inner label {
+  margin: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .buttpn {
-    display: flex;  
-    justify-content: center;
-    width: 80%
+  display: flex;
+  justify-content: center;
+  width: 80%;
 }
 
-.buttpn button{
-    padding: 10px 16px 10px 16px;
-    margin: 8px 16px 8px 16px;
-    outline: none;
-    border: none;
-    border-radius: 6px;
-    background-color: #19282F;
-    color:white;
-    font-size: 16px;
-    font-weight: bold;
+.buttpn button {
+  padding: 10px 16px 10px 16px;
+  margin: 8px 16px 8px 16px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background-color: #19282f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .add-img {
   height: 175px;
   margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .add-img {
+    height: 125px;
+  }
+
+  .modal-inner label {
+    font-size: 16px;
+  }
+
+  .buttpn button {
+    font-size: 14px;
+  }
 }
