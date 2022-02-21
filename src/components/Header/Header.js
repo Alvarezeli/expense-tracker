@@ -4,20 +4,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="header-container">
-      <div className="header">
-        <div className="header-logo">
-          Tuqui Tuqui <i class="fi fi-rr-credit-card"></i>
-        </div>
-        <div className='header-button'>
-            <a
-            href='https://github.com/Alvarezeli'
-            target='_blank'
-            rel='noopener noreferrer'>
-            <i class="devicon-github-original colored"></i>
-            </a>
-
-        </div>
-      </div>
+      <h1 className="header">Tuqui Tuqui</h1>
     </div>
   );
 };

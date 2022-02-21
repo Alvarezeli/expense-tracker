@@ -31,7 +31,7 @@ export const expenseReduce = (state = initialState, action) => {
     case DELETE_EXPENSE: {
       const {payload} = action;
       const updateList = state.expenseList.filter(
-        item => item.createAt !== payload.createAt
+        item => item.title !== payload.title
       );
       localStorage.setItem('expense-list', JSON.stringify(updateList))
       return{

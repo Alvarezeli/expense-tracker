@@ -1,57 +1,21 @@
-.header-container {
- width: 50%;
- margin: auto;
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+.header {
+  text-align: center;
+  font-family: 'Lobster Two', cursive;
+  font-size: 45px;
+  margin: 10px;
+  color: #19282F;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
-    margin: 12px, 20px;
-    padding: 10px;
+@media only screen and (max-width: 1024px) {
+  .header-container {
+    width: 100%;
+  }
 }
 
-.header-logo{
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.header-logo i {
-    display: flex;
-    align-items: center;
-    margin-left: 12px;
-}
-
-.header-button {
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media only screen and (max-width: 1024px){
-    .header-container{
-        width: 90%;
-    }
-    .header-logo{
-        font-size: 26px;
-    }
-    .header-button{
-        font-size: 28px;
-    }
-}
-
-@media only screen and (max-width: 512px){
-    .header-container{
-        width: 100%;
-    }
-    .header-logo{
-        font-size: 22px;
-    }
-    .header-button{
-        font-size: 25px;
-    }
+@media only screen and (max-width: 512px) {
+  .header-container {
+    width: 100%;
+  }
 }

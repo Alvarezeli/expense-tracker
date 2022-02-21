@@ -1,26 +1,31 @@
 .card{
     background-color: white;
-    padding: 12px;
-    margin: 2px 8px;
+    padding: 5px 15px 5px 15px;
+    margin: 1px 1px 15px 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 6px;
 }
-
+.card-image-container {
+    display: flex;
+  
+    align-items: center;
+   
+   
+}
 .card-image{
-    height: 75px;
+    height: 70px;
+    margin-right: 20px;
 }
 
 .card-right{
     display: flex;
     flex-direction: column-reverse;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between
 };
 
-.card-info{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    margin-left: 12px;
+.puedes{
+   margin-left: 50px;
 }

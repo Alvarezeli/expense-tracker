@@ -7,10 +7,11 @@ import { ToastContainer, toast } from 'react-toastify';
 const ExpenseList = () => {
  const {expenseList, query} = useSelector((state) => state.expenses)
  //console.log('soy expenses', expenseList)
- const filteredList = expenseList.filter((item) => item.title.includes(query))
 
+ //agrega el .toLowerCase para las búsquedas
+ const filteredList = expenseList.filter((item) => item.title.toLowerCase().includes(query.toLowerCase()))
 
- const notifySuccess = () => toast.success('Gasto eliminado')
+ const notifySuccess = () => toast.success('El gasto ha sido eliminado')
 
   return (
     <div className="expense-list">

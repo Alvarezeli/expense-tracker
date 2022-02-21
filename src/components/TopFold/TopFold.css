@@ -1,9 +1,10 @@
 .topFold {
   display: flex;
   justify-content: space-between;
-  margin: 6px 12px;
-  padding: 12px 0px;
+  padding: 5px ;
+  margin: 25px 10px 10px;
   align-items: center;
+  width: 90%;
 }
 
 .home-topfold {
@@ -15,50 +16,49 @@
 .searchbar {
   display: flex;
   align-items: center;
-  width: 50%;
-  background-color: #f5f5f5;
-  border-radius: 12px;
+  width: 65%;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .searchbar input {
     width: 80%;
     outline: none;
-    padding: 5px;
+    padding: 4px;
     border: none;
     margin-left: 8px;
-    background-color: #f5f5f5;
-    font-size: 17px;
+    background-color: white;
+    font-size: 16px;
 }
 
 .searchbar i{
     display: flex;
     align-items: center;
     margin-left: 10px;
-    font-size: 22px;
+    font-size: 18px;
 }
 
-.add-button {
+/* Button agregar */
+.add-button button {
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     border-radius: 6px;
-    border: 3px solid  #f5f5f5;
-    font-size: 16px; 
-    font-weight: 550;
-    padding: 5px;
+    border: 3px solid  #19282F;
+    background-color: #19282F;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px; 
+    font-weight: 400;
+    padding: 7px 12px;
     cursor: pointer;
+    width: 125%;
 }
 
-.add-button i {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    font-size: 22px;
+.add-button button h4{
+    margin: 0px;
 }
-
-.add-button label {
-    cursor: pointer;
-}
-
 .add-topfold {
     display: flex;
     justify-content: space-between;
