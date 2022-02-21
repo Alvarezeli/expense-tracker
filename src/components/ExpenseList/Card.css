@@ -52,7 +52,7 @@
 
 @media only screen and (max-width: 750px) {
     .card-image-container h4 {
-       font-size: 15px;
+       font-size: 16px;
        word-break: normal;
        width: 100%
     }
@@ -60,14 +60,14 @@
 
 @media only screen and (max-width: 600px) {
     .card-image-container h4 {
-        font-size: 13px;
+        font-size: 14px;
         word-break: normal;
         width: 100%
      }
      .card-right h3{
-      font-size: 13px;
+      font-size: 14px;
      }
      .card-image-container p{
-     font-size: 11.5px;
+     font-size: 12px;
   }
 }
