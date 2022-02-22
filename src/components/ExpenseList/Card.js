@@ -38,7 +38,7 @@ const Card = ({ item, notifySuccess }) => {
       <div className="card-right">
         <h3>$ {item.amount}</h3>
         <div className="delete-icon" onClick={handleDelete}>
-        <i class="fi fi-rr-cross-circle"></i>
+        <i className="fi fi-rr-cross-circle"></i>
         </div>
       </div>
     </div>

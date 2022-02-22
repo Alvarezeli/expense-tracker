@@ -23,7 +23,7 @@ const ExpenseList = () => {
         closeOnClick
       />
       {filteredList.length
-        ? filteredList.map((item) => <Card item={item} key={Math.round(1, 5)} notifySuccess={notifySuccess} />)
+        ? filteredList.map((item, i) => <Card item={item} key={i} notifySuccess={notifySuccess} />)
         : <div className="empty-list">
           <img src={require('../../Assets/Imagenes/money.png')} alt='Lista vacia' className="empty-image"/>
           <label>¡Opsss, tu lista de gastos esta vacía!</label>

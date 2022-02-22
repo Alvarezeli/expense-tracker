@@ -18,7 +18,7 @@ const TopFold = () => {
       {window.location.pathname === "/" ? (
         <div className="home-topfold">
           <div className="searchbar">
-            <i class="fi fi-rr-search"></i>
+            <i className="fi fi-rr-search"></i>
             <input
               value={query}
               placeholder="Busca tus gastos..."
@@ -35,13 +35,13 @@ const TopFold = () => {
         <div className="add-topfold">
           <Link to="/">
             <div className="add-topfold-button">
-              <i class="fi fi-rr-angle-double-left"></i>
+              <i className="fi fi-rr-angle-double-left"></i>
               <label>Volver</label>
             </div>
           </Link>
           <Link to="/">
             <div className="add-topfold-button">
-              <i class="fi fi-rr-cross-circle"></i>
+              <i className="fi fi-rr-cross-circle"></i>
               <label>Cancelar</label>
             </div>
           </Link>

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { categories } from "../../constants/add-expense";
 import { useDispatch } from "react-redux";
 import { addExpense } from "../../redux/actions/index.js";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import SucessModal from "./SucessModal";
-import './AddForm.css';
+import "./AddForm.css";
 
 const AddForm = () => {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ const AddForm = () => {
   const [amount, setAmount] = useState("");
   const [category, setCategory] = useState("");
   //console.log("soy categorias", category);
-  const [openModal, setOpenModal] = useState(false)
+  const [openModal, setOpenModal] = useState(false);
 
   const handleTitle = (e) => {
     setTitle(e.target.value);
@@ -41,8 +41,7 @@ const AddForm = () => {
 
   const handleSubmit = () => {
     if (title === "" || amount === "" || !category) {
-      const notify = () => toast("¡Ingresa los datos requeridos!");
-      notify();
+      toast("¡Ingresa los datos requeridos!");
       return;
     }
     const data = {
@@ -53,19 +52,19 @@ const AddForm = () => {
     };
     dispatch(addExpense(data));
     //console.log("estoy enviando", data);
-    setOpenModal(true)
+    setOpenModal(true);
   };
 
   return (
     <div className="add-form">
-      <ToastContainer 
+      <ToastContainer
         position="bottom-center"
         autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
       />
-      <SucessModal openModal={openModal} setOpenModal={setOpenModal}/>
+      <SucessModal openModal={openModal} setOpenModal={setOpenModal} />
       <div className="form-item">
         <label>Título</label>
         <input
@@ -91,7 +90,7 @@ const AddForm = () => {
           >
             <label>{category ? category.title : "Categorias"}</label>
 
-            <i class="fi fi-rr-caret-down"></i>
+            <i className="fi fi-rr-caret-down"></i>
           </div>
           {openCategory && (
             <div className="category-container">

@@ -20,7 +20,7 @@ const SucessModal = ({ openModal, setOpenModal }) => {
   };
 
   return (
-    <Modal isOpen={openModal} style={customStyles}>
+    <Modal isOpen={openModal} style={customStyles} ariaHideApp={false}>
       <div className="modal-inner">
         <img
           src={require("../../Assets/Imagenes/check-mark.png")}
