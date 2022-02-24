@@ -68,7 +68,7 @@ margin-left: 10px;
 .category-item {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 2px 0px 2px 0px;
   cursor: pointer;
   align-items: center;
@@ -79,13 +79,14 @@ margin-left: 10px;
 }
 
 .category-item label{
-    margin-left: 10px;
+    margin-left: 2px;
     text-align: center;
     font-size: 15.5px;
 }
 .category-item img {
   height: 35px;
-  margin-right: 20px;
+  margin-right: 12px;
+  margin-left: 10px;
 }
 
 .form-button {

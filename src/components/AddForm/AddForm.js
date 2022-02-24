@@ -103,8 +103,8 @@ const AddForm = () => {
                   key={category.id}
                   onClick={() => handleCategory(category)}
                 >
+                   <img src={category.icon} alt={category.title} />
                   <label>{category.title}</label>
-                  <img src={category.icon} alt={category.title} />
                 </div>
               ))}
             </div>
